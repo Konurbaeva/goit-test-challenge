@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/goit-test-challenge/static/css/main.7acaea2f.css",
-    "main.js": "/goit-test-challenge/static/js/main.e64006c2.js",
+    "main.js": "/goit-test-challenge/static/js/main.eea4d586.js",
     "index.html": "/goit-test-challenge/index.html",
     "main.7acaea2f.css.map": "/goit-test-challenge/static/css/main.7acaea2f.css.map",
-    "main.e64006c2.js.map": "/goit-test-challenge/static/js/main.e64006c2.js.map"
+    "main.eea4d586.js.map": "/goit-test-challenge/static/js/main.eea4d586.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.e64006c2.js"
+    "static/js/main.eea4d586.js"
   ]
 }
