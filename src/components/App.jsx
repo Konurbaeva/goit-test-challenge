@@ -2,6 +2,6 @@ import Card from "./Card"
 
 export const App = () => {
   return (
-   <Card/>
+   <Card buttonText="FOLLOW" followersCount="0"/>
   );
 };
