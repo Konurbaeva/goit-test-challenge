@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../Card.css';
 
+
 function Card({ imageUrl, imageAlt, tweetsCount, followersCount, buttonText }) {
   const [count, setCount] = useState(0);
 
