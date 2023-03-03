@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components'
+import { LoadingLogo } from './LoadingLogo';
 
-import { ReactComponent as GoItSvg } from '../assets/LogoGoIT.svg';
+const boyImg = require('../assets/Hansel.png');
 
 // import '../Card.css';
 
@@ -54,11 +55,6 @@ const CardContent = styled.div`
   padding: 20px;
 `;
 
-const CardTitle = styled.h2`
-  font-size: 24px;
-  margin-top: 0;
-`;
-
 const CardText = styled.p`
   font-size: 16px;
   line-height: 1.5;
@@ -83,13 +79,15 @@ const CardLink = styled.a`
 const Card = () => {
     return (
       <CardWrapper>
-        <CardImg src="https://via.placeholder.com/150" alt="placeholder image" />
+       
         <CardContent>
-        <GoItSvg />
-          <CardTitle>Card Title</CardTitle>
+       <LoadingLogo/>
+          <img  src={boyImg} alt="logo"/>
           <CardText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac orci magna.</CardText>
+         
           <CardLink href="#">Tweets</CardLink>
           <CardLink href="#">Followers</CardLink>
+
         </CardContent>
       </CardWrapper>
     );
