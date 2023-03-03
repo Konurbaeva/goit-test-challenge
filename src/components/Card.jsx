@@ -4,29 +4,6 @@ import { LoadingLogo } from './LoadingLogo';
 
 const boyImg = require('../assets/Hansel.png');
 
-// import '../Card.css';
-
-// function Card({ imageUrl, imageAlt, tweetsCount, followersCount, buttonText }) {
-//   const [count, setCount] = useState(0);
-
-//   function handleClick() {
-//     setCount(count + 1);
-//   }
-
-//   return (
-//     <div className="card">
-//       <img src={imageUrl} alt={imageAlt} />
-//       <div className="card-content">
-//         <p>{tweetsCount}</p>
-//         <button className="followers-count">{followersCount}</button>
-//         <button className="card-button" onClick={handleClick}>{buttonText}</button>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Card;
-
 const Button = styled.button`
   display: inline-block;
   border-radius: 3px;
