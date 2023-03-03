@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import { LoadingLogo } from './LoadingLogo';
 
 const boyImg = require('../assets/Hansel.png');
+const rectangle = require('../assets/Rectangle.png');
+const ellipse = require('../assets/Ellipse.png');
 
 const Button = styled.button`
   display: inline-block;
@@ -22,11 +24,11 @@ const CardWrapper = styled.div`
   overflow: hidden;
 `;
 
-const CardImg = styled.img`
-  width: 100%;
-  height: auto;
-  display: block;
-`;
+// const CardImg = styled.img`
+//   width: 100%;
+//   height: auto;
+//   display: block;
+// `;
 
 const CardContent = styled.div`
   padding: 20px;
@@ -59,7 +61,9 @@ const Card = () => {
        
         <CardContent>
        <LoadingLogo/>
-          <img  src={boyImg} alt="logo"/>
+          <img src={boyImg} alt="logo"/>
+          <img src={rectangle} alt="logo"/>
+          <img src={ellipse} alt="logo"/>
           <CardText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac orci magna.</CardText>
          
           <CardLink href="#">Tweets</CardLink>
