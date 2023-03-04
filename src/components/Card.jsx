@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { LoadingLogo } from './LoadingLogo';
 import '../Card.css';
@@ -72,10 +72,17 @@ const Button = styled.button`
 
 const Card = () => {
   const [text, setText] = useState('FOLLOW');
+  const [followersCount, setFollowersCount] = useState(parseInt(localStorage.getItem('followersCount')) || 0);
 
   const handleClick = () => {
     setText('FOLLOWING');
+    setFollowersCount(followersCount+1)
   };
+
+  useEffect(() => {
+    localStorage.setItem('followersCount', followersCount.toString());
+  }, [followersCount]);
+
   return (
     <CardWrapper>
       <CardContent>
@@ -88,7 +95,7 @@ const Card = () => {
         </div>
 
         <CardParagraph>Tweets</CardParagraph>
-        <CardParagraph>Followers</CardParagraph>
+        <CardParagraph>Followers {followersCount}</CardParagraph>
         <Button onClick={handleClick}>{text}</Button>
       </CardContent>
     </CardWrapper>
