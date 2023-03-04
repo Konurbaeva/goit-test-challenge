@@ -19,39 +19,5 @@
   .image-container img:last-child {
     z-index: 1;
   }
-  
-  /* 
-  
-  .image-container {
-    position: relative;
 
-       background-color: #471CA9;
-    width: 300px;
-  }
-  .image-container {
-    background-color: #471CA9;
-    width: 300px;
-    padding: 20px;
-  }
-
-  .image-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-  } 
-   .image-container img:first-child {
-    z-index: 1;
-    position: relative;
-  }
-  .image-container img:last-child {
-    z-index: 1;
-    
-  }
-    .image-container img {
-    position: absolute;
-    top: 0;
-  }
-
-  
-  */
   
