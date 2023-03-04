@@ -44,6 +44,11 @@ margin-bottom:20px;
 margin-left:35px;
 `;
 
+const user = {
+    imageUrl: boyImg,
+    imageSize: 80,
+  };
+
 const Card = () => {
   const [followersCount, setFollowersCount] = useState(
     parseInt(localStorage.getItem('followersCount')) || 100500
@@ -65,10 +70,15 @@ const Card = () => {
         <LoadingLogo />
         <div className="image-container">
         <img src={questions} alt="logo" />
-          <img src={rectangle} alt="logo" />
-          <img src={boyImg} alt="logo" />
+          <img src={rectangle} alt="logo" className="rectangle"/>
+          <img alt="logo"
+           src={user.imageUrl}
+            style={{
+          width: user.imageSize,
+          height: user.imageSize
+        }} />
           <img src={ellipse} alt="logo" />
-          <img src={rectangle} alt="logo" />
+          <img src={rectangle} alt="logo" className="rectangle"/>
           
         </div>
         <CardParagraph>777 Tweets</CardParagraph>
