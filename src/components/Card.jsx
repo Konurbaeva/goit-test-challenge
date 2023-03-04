@@ -45,7 +45,6 @@ margin-left:35px;
 `;
 
 const Card = () => {
-  const [text, setText] = useState('FOLLOW');
   const [followersCount, setFollowersCount] = useState(
     parseInt(localStorage.getItem('followersCount')) || 100500
   );
@@ -53,7 +52,6 @@ const Card = () => {
 
   const handleClick = () => {
     setIsFollowing(!isFollowing);
-    setText('FOLLOWING');
     setFollowersCount(isFollowing ? followersCount - 1 : followersCount + 1);
   };
 
