@@ -1,10 +1,9 @@
 import styled from 'styled-components'
 
 const Svg = styled.svg`
-  position:absolute; 
   border-radius: 3px;
-  padding: 0.5rem 0;
-  margin: 0.5rem 1rem;
+  padding: 0.5px 0;
+  margin: 0.5px 1px;
 `
 export const LoadingLogo = () => {
   return (

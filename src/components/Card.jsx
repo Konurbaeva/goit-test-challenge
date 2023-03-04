@@ -23,6 +23,7 @@ const CardParagraph = styled.div`
   display: block;
   text-align: center;
   padding: 10px;
+  color: #EBD8FF;
 `;
 
 
@@ -69,16 +70,16 @@ const Card = () => {
       <CardContent>
         <LoadingLogo />
         <div className="image-container">
-        <img src={questions} alt="logo" />
-          <img src={rectangle} alt="logo" className="rectangle"/>
-          <img alt="logo"
+        <img src={questions} alt="questions" />
+          <img src={rectangle} alt="rectangle" className="rectangle"/>
+          <img alt="boy"
            src={user.imageUrl}
             style={{
           width: user.imageSize,
           height: user.imageSize
         }} />
-          <img src={ellipse} alt="logo" />
-          <img src={rectangle} alt="logo" className="rectangle"/>
+          <img src={ellipse} alt="ellipse" />
+          <img src={rectangle} alt="rectangle" className="rectangle"/>
           
         </div>
         <CardParagraph>777 Tweets</CardParagraph>
