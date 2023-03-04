@@ -3,6 +3,7 @@
     background-color: #471CA9;
     width: 300px;
     padding: 20px;
+    
   }
 
   .image-container img {
@@ -26,6 +27,11 @@
 
        background-color: #471CA9;
     width: 300px;
+  }
+  .image-container {
+    background-color: #471CA9;
+    width: 300px;
+    padding: 20px;
   }
 
   .image-container img {

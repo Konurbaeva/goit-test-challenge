@@ -29,22 +29,6 @@ const CardParagraph = styled.div`
   padding: 10px;
 `;
 
-// const Button = styled.button`
-//   padding: 0.5rem 0;
-//   margin: 0.5rem 1rem;
-//   width: 11rem;
-//   border: 2px solid white;
-//   display: block;
-//   margin-top: 20px;
-//   background-color: #f44336;
-//   color: #fff;
-//   text-align: center;
-//   border-radius: 5px;
-//   text-decoration: none;
-//   &:hover {
-//     background-color: #d32f2f;
-//   }
-// `;
 
 const Button = styled.button`
 display: flex;
@@ -60,6 +44,8 @@ top: 374px;
 background: #EBD8FF;
 box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
 border-radius: 10.3108px;
+margin-bottom:20px;
+margin-left:20px;
 `;
 
 const Card = () => {
