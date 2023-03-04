@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/goit-test-challenge/static/css/main.f8cdb4ae.css",
-    "main.js": "/goit-test-challenge/static/js/main.03fe16b9.js",
+    "main.css": "/goit-test-challenge/static/css/main.5b637b77.css",
+    "main.js": "/goit-test-challenge/static/js/main.7ae33029.js",
     "static/media/picture-with-questions.png": "/goit-test-challenge/static/media/picture-with-questions.010ab3c33bc13f300d33.png",
     "index.html": "/goit-test-challenge/index.html",
-    "main.f8cdb4ae.css.map": "/goit-test-challenge/static/css/main.f8cdb4ae.css.map",
-    "main.03fe16b9.js.map": "/goit-test-challenge/static/js/main.03fe16b9.js.map"
+    "main.5b637b77.css.map": "/goit-test-challenge/static/css/main.5b637b77.css.map",
+    "main.7ae33029.js.map": "/goit-test-challenge/static/js/main.7ae33029.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8cdb4ae.css",
-    "static/js/main.03fe16b9.js"
+    "static/css/main.5b637b77.css",
+    "static/js/main.7ae33029.js"
   ]
 }
