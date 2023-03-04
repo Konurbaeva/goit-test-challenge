@@ -16,10 +16,6 @@ const CardWrapper = styled.div`
   background-color: #471CA9;
 `;
 
-// const CardContent = styled.div`
-//   padding: 20px;
-// `;
-
 const CardContent = styled.div`
   background-color: #471CA9;
 `;
@@ -45,7 +41,7 @@ background: #EBD8FF;
 box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
 border-radius: 10.3108px;
 margin-bottom:20px;
-margin-left:20px;
+margin-left:35px;
 `;
 
 const Card = () => {
