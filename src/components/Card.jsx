@@ -6,6 +6,7 @@ import '../Card.css';
 const boyImg = require('../assets/Hansel.png');
 const rectangle = require('../assets/Rectangle.png');
 const ellipse = require('../assets/Ellipse.png');
+const questions = require('../assets/picture-with-questions.png');
 
 const CardWrapper = styled.div`
   width: 300px;
@@ -26,21 +27,37 @@ const CardParagraph = styled.div`
   padding: 10px;
 `;
 
+// const Button = styled.button`
+//   padding: 0.5rem 0;
+//   margin: 0.5rem 1rem;
+//   width: 11rem;
+//   border: 2px solid white;
+//   display: block;
+//   margin-top: 20px;
+//   background-color: #f44336;
+//   color: #fff;
+//   text-align: center;
+//   border-radius: 5px;
+//   text-decoration: none;
+//   &:hover {
+//     background-color: #d32f2f;
+//   }
+// `;
+
 const Button = styled.button`
-  padding: 0.5rem 0;
-  margin: 0.5rem 1rem;
-  width: 11rem;
-  border: 2px solid white;
-  display: block;
-  margin-top: 20px;
-  background-color: #f44336;
-  color: #fff;
-  text-align: center;
-  border-radius: 5px;
-  text-decoration: none;
-  &:hover {
-    background-color: #d32f2f;
-  }
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 14px 28px;
+gap: 6px;
+width: 196px;
+left: 92px;
+top: 374px;
+
+background: #EBD8FF;
+box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+border-radius: 10.3108px;
 `;
 
 const Card = () => {
@@ -69,9 +86,11 @@ const Card = () => {
           <img src={boyImg} alt="logo" />
           <img src={ellipse} alt="logo" />
           <img src={rectangle} alt="logo" />
+          <img src={questions} alt="logo" />
+          
         </div>
-        <CardParagraph>Tweets</CardParagraph>
-        <CardParagraph>Followers {followersCount}</CardParagraph>
+        <CardParagraph>777 Tweets</CardParagraph>
+        <CardParagraph>{followersCount} Followers</CardParagraph>
         <Button
           onClick={handleClick}
           style={{ backgroundColor: isFollowing ? '#5CD3A8' : '#EBD8FF' }}
