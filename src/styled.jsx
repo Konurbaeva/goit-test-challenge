@@ -3,7 +3,6 @@ import styled from 'styled-components'
 const Button = styled.button`
   display: inline-block;
   border-radius: 3px;
-  padding: 0.5rem 0;
   margin: 0.5rem 1rem;
   width: 11rem;
   background: transparent;
@@ -11,12 +10,6 @@ const Button = styled.button`
   border: 2px solid white;
 `
 
-// const CardWrapper = styled.div`
-//   width: 300px;
-//   border-radius: 10px;
-//   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-//   overflow: hidden;
-// `;
 const CardWrapper = styled.div`
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
@@ -57,3 +50,21 @@ const CardLink = styled.a`
     background-color: #d32f2f;
   }
 `;
+
+// const Button = styled.button`
+//   display: inline-block;
+//   border-radius: 3px;
+//   padding: 0.5rem 0;
+//   margin: 0.5rem 1rem;
+//   width: 11rem;
+//   background: transparent;
+//   color: white;
+//   border: 2px solid white;
+// `
+
+// const CardWrapper = styled.div`
+//   width: 300px;
+//   border-radius: 10px;
+//   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+//   overflow: hidden;
+// `;

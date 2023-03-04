@@ -16,14 +16,15 @@ const CardWrapper = styled.div`
   background-color: #471CA9;
 `;
 
-const CardContent = styled.div`
-  padding: 20px;
-  background-color: pink;
-`;
+// const CardContent = styled.div`
+//   padding: 20px;
+// `;
 
+const CardContent = styled.div`
+  background-color: #471CA9;
+`;
 const CardParagraph = styled.div`
   display: block;
-  margin-top: 20px;
   text-align: center;
   padding: 10px;
 `;
@@ -50,7 +51,7 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-padding: 14px 28px;
+padding: 10px 20px;
 gap: 6px;
 width: 196px;
 left: 92px;

@@ -1,18 +1,31 @@
 
 .image-container {
-    background-color: pink;
+    background-color: #471CA9;
     width: 300px;
+    padding: 20px;
   }
 
   .image-container img {
     top: 0;
+  }
+
+  .image-container img:first-child {
+    z-index: 1;
+    position: relative;
+    width: 300px;
+  }
+
+  .image-container img:last-child {
+    z-index: 1;
   }
   
   /* 
   
   .image-container {
     position: relative;
-    color:violet;
+
+       background-color: #471CA9;
+    width: 300px;
   }
 
   .image-container img {
@@ -35,14 +48,4 @@
 
   
   */
-
-  .image-container img:first-child {
-    z-index: 1;
-    position: relative;
-  }
-
-  .image-container img:last-child {
-    z-index: 1;
-    
-  }
   
