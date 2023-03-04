@@ -11,8 +11,13 @@ const Button = styled.button`
   border: 2px solid white;
 `
 
+// const CardWrapper = styled.div`
+//   width: 300px;
+//   border-radius: 10px;
+//   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+//   overflow: hidden;
+// `;
 const CardWrapper = styled.div`
-  width: 300px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
   overflow: hidden;

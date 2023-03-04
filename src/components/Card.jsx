@@ -7,19 +7,6 @@ const boyImg = require('../assets/Hansel.png');
 const rectangle = require('../assets/Rectangle.png');
 const ellipse = require('../assets/Ellipse.png');
 
-// const CardWrapper = styled.div`
-//   width: 300px;
-//   border-radius: 10px;
-//   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-//   overflow: hidden;
-// `;
-
-// const CardImg = styled.img`
-//   width: 100%;
-//   height: auto;
-//   display: block;
-// `;
-
 const CardWrapper = styled.div`
   width: 300px;
   border-radius: 10px;
@@ -29,26 +16,12 @@ const CardWrapper = styled.div`
 
 const CardContent = styled.div`
   padding: 20px;
+  background-color: pink;
 `;
 
-// const CardParagraph = styled.div`
-//   display: block;
-//   margin-top: 20px;
-//   background-color: #f44336;
-//   color: #fff;
-//   text-align: center;
-//   padding: 10px;
-//   border-radius: 5px;
-//   text-decoration: none;
-
-//   &:hover {
-//     background-color: #d32f2f;
-//   }
-// `;
 const CardParagraph = styled.div`
   display: block;
   margin-top: 20px;
-
   text-align: center;
   padding: 10px;
 `;
@@ -72,14 +45,15 @@ const Button = styled.button`
 
 const Card = () => {
   const [text, setText] = useState('FOLLOW');
-  const [followersCount, setFollowersCount] = useState(parseInt(localStorage.getItem('followersCount')) || 100500);
+  const [followersCount, setFollowersCount] = useState(
+    parseInt(localStorage.getItem('followersCount')) || 100500
+  );
   const [isFollowing, setIsFollowing] = useState(false);
-
 
   const handleClick = () => {
     setIsFollowing(!isFollowing);
     setText('FOLLOWING');
-    setFollowersCount(isFollowing ? followersCount-1: followersCount+1)
+    setFollowersCount(isFollowing ? followersCount - 1 : followersCount + 1);
   };
 
   useEffect(() => {
@@ -96,11 +70,13 @@ const Card = () => {
           <img src={ellipse} alt="logo" />
           <img src={rectangle} alt="logo" />
         </div>
-
         <CardParagraph>Tweets</CardParagraph>
         <CardParagraph>Followers {followersCount}</CardParagraph>
-        <Button onClick={handleClick} style={{backgroundColor: isFollowing ? '#5CD3A8' : '#EBD8FF'}}>
-        {isFollowing ? 'FOLLOWING' : 'FOLLOW'}
+        <Button
+          onClick={handleClick}
+          style={{ backgroundColor: isFollowing ? '#5CD3A8' : '#EBD8FF' }}
+        >
+          {isFollowing ? 'FOLLOWING' : 'FOLLOW'}
         </Button>
       </CardContent>
     </CardWrapper>

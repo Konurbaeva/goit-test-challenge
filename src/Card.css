@@ -1,10 +1,21 @@
 
 .image-container {
-    position: relative;
-    
+    background-color: pink;
+    width: 300px;
+  }
+
+  .image-container img {
+    top: 0;
   }
   
-  /* .image-container img {
+  /* 
+  
+  .image-container {
+    position: relative;
+    color:violet;
+  }
+
+  .image-container img {
     position: absolute;
     top: 0;
     left: 0;
@@ -17,12 +28,13 @@
     z-index: 1;
     
   }
-  
-  */
-  .image-container img {
+    .image-container img {
     position: absolute;
     top: 0;
   }
+
+  
+  */
 
   .image-container img:first-child {
     z-index: 1;
