@@ -72,11 +72,14 @@ const Button = styled.button`
 
 const Card = () => {
   const [text, setText] = useState('FOLLOW');
-  const [followersCount, setFollowersCount] = useState(parseInt(localStorage.getItem('followersCount')) || 0);
+  const [followersCount, setFollowersCount] = useState(parseInt(localStorage.getItem('followersCount')) || 100500);
+  const [isFollowing, setIsFollowing] = useState(false);
+
 
   const handleClick = () => {
+    setIsFollowing(!isFollowing);
     setText('FOLLOWING');
-    setFollowersCount(followersCount+1)
+    setFollowersCount(isFollowing ? followersCount-1: followersCount+1)
   };
 
   useEffect(() => {
@@ -96,7 +99,9 @@ const Card = () => {
 
         <CardParagraph>Tweets</CardParagraph>
         <CardParagraph>Followers {followersCount}</CardParagraph>
-        <Button onClick={handleClick}>{text}</Button>
+        <Button onClick={handleClick} style={{backgroundColor: isFollowing ? '#5CD3A8' : '#EBD8FF'}}>
+        {isFollowing ? 'FOLLOWING' : 'FOLLOW'}
+        </Button>
       </CardContent>
     </CardWrapper>
   );
