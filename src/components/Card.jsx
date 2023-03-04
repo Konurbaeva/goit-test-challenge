@@ -13,6 +13,7 @@ const CardWrapper = styled.div`
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  background-color: #471CA9;
 `;
 
 const CardContent = styled.div`
@@ -82,11 +83,11 @@ const Card = () => {
       <CardContent>
         <LoadingLogo />
         <div className="image-container">
+        <img src={questions} alt="logo" />
           <img src={rectangle} alt="logo" />
           <img src={boyImg} alt="logo" />
           <img src={ellipse} alt="logo" />
           <img src={rectangle} alt="logo" />
-          <img src={questions} alt="logo" />
           
         </div>
         <CardParagraph>777 Tweets</CardParagraph>
