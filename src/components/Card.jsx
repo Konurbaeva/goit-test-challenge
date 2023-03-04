@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components'
 import { LoadingLogo } from './LoadingLogo';
+import '../Card.css';
 
 const boyImg = require('../assets/Hansel.png');
 const rectangle = require('../assets/Rectangle.png');
@@ -61,9 +62,14 @@ const Card = () => {
        
         <CardContent>
        <LoadingLogo/>
+          {/* <img src={boyImg} alt="logo"/>
+          <img src={rectangle} alt="logo"/>
+          <img src={ellipse} alt="logo"/> */}
+          <div className="image-container">
           <img src={boyImg} alt="logo"/>
           <img src={rectangle} alt="logo"/>
           <img src={ellipse} alt="logo"/>
+    </div>
           <CardText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac orci magna.</CardText>
          
           <CardLink href="#">Tweets</CardLink>
