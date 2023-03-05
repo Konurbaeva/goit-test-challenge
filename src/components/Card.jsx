@@ -5,7 +5,6 @@ import '../Card.css';
 
 const boyImg = require('../assets/Hansel.png');
 const rectangle = require('../assets/Rectangle.png');
-const ellipse = require('../assets/Ellipse.png');
 const questions = require('../assets/picture-with-questions.png');
 
 const CardWrapper = styled.div`
@@ -19,13 +18,6 @@ const CardWrapper = styled.div`
 const CardContent = styled.div`
   background-color: #471CA9;
 `;
-
-// const CardParagraph = styled.div`
-//   display: block;
-//   text-align: center;
-//   padding: 10px;
-//   color: #EBD8FF;
-// `;
 
 const CardParagraph = styled.div`
   display: block;
@@ -78,21 +70,7 @@ const Card = () => {
   return (
     <CardWrapper>
       <CardContent>
-        <LoadingLogo />
-        {/* <div className="image-container">
-        <img src={questions} alt="questions" />
-          <img src={rectangle} alt="rectangle" className="rectangle"/>
-          <img alt="boy"
-           src={user.imageUrl}
-            style={{
-          width: user.imageSize,
-          height: user.imageSize
-        }} />
-          <img src={ellipse} alt="ellipse" />
-          <img src={rectangle} alt="rectangle" className="rectangle"/>
-          
-        </div> */}
-               
+        <LoadingLogo />   
         <img src={questions} alt="questions" />
          <div style={{
          display: 'flex',
@@ -110,11 +88,6 @@ const Card = () => {
           position: 'absolute',
           overflow: 'hidden'
         }} />
-          {/* <img src={ellipse} alt="ellipse" 
-           style={{
-            position: 'relative',
-          }}
-          /> */}
          </div>
           <img src={rectangle} alt="rectangle" className="rectangle"/>
           
