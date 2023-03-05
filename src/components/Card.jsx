@@ -97,7 +97,8 @@ const Card = () => {
          <div style={{
          display: 'flex',
          justifyContent: 'center',
-         alignItems: 'center'
+         alignItems: 'center',
+         margin:'50px'
         }}>
          <img src={rectangle} alt="rectangle" className="rectangle"/>
           <img alt="boy"
@@ -109,13 +110,11 @@ const Card = () => {
           position: 'absolute',
           overflow: 'hidden'
         }} />
-          <img src={ellipse} alt="ellipse" 
+          {/* <img src={ellipse} alt="ellipse" 
            style={{
-          
             position: 'relative',
-            
           }}
-          />
+          /> */}
          </div>
           <img src={rectangle} alt="rectangle" className="rectangle"/>
           
