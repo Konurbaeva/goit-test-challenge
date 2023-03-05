@@ -19,11 +19,20 @@ const CardWrapper = styled.div`
 const CardContent = styled.div`
   background-color: #471CA9;
 `;
+
+// const CardParagraph = styled.div`
+//   display: block;
+//   text-align: center;
+//   padding: 10px;
+//   color: #EBD8FF;
+// `;
+
 const CardParagraph = styled.div`
   display: block;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   color: #EBD8FF;
+  text-transform: uppercase;
 `;
 
 
@@ -43,6 +52,7 @@ box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
 border-radius: 10.3108px;
 margin-bottom:20px;
 margin-left:35px;
+text-transform: uppercase;
 `;
 
 const user = {
@@ -69,7 +79,7 @@ const Card = () => {
     <CardWrapper>
       <CardContent>
         <LoadingLogo />
-        <div className="image-container">
+        {/* <div className="image-container">
         <img src={questions} alt="questions" />
           <img src={rectangle} alt="rectangle" className="rectangle"/>
           <img alt="boy"
@@ -81,14 +91,41 @@ const Card = () => {
           <img src={ellipse} alt="ellipse" />
           <img src={rectangle} alt="rectangle" className="rectangle"/>
           
-        </div>
+        </div> */}
+               
+        <img src={questions} alt="questions" />
+         <div style={{
+         display: 'flex',
+         justifyContent: 'center',
+         alignItems: 'center'
+        }}>
+         <img src={rectangle} alt="rectangle" className="rectangle"/>
+          <img alt="boy"
+           src={user.imageUrl}
+            style={{
+          width: user.imageSize,
+          height: user.imageSize,
+          textAlign: 'center',
+          position: 'absolute',
+          overflow: 'hidden'
+        }} />
+          <img src={ellipse} alt="ellipse" 
+           style={{
+          
+            position: 'relative',
+            
+          }}
+          />
+         </div>
+          <img src={rectangle} alt="rectangle" className="rectangle"/>
+          
         <CardParagraph>777 Tweets</CardParagraph>
         <CardParagraph>{followersCount} Followers</CardParagraph>
         <Button
           onClick={handleClick}
           style={{ backgroundColor: isFollowing ? '#5CD3A8' : '#EBD8FF' }}
         >
-          {isFollowing ? 'FOLLOWING' : 'FOLLOW'}
+          {isFollowing ? 'Following' : 'Follow'}
         </Button>
       </CardContent>
     </CardWrapper>

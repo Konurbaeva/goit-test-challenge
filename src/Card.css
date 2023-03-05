@@ -1,8 +1,12 @@
 
 
-.image-container {
+/* .image-container {
   width: 320px;
   padding: 10px;
+} */
+
+.image-container {
+  width: 320px;
 }
 
 .image-container img {
